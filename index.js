@@ -8,7 +8,7 @@ process.env.PWD = process.cwd()
 app.use(express.static(process.env.PWD + '/public'));
 
 app.get('/', (req, res) => {
-  res.sendFile(process.cwd() + '/Login.html');
+  res.sendFile(process.cwd() + '/index.html');
 });
 
 http.listen(port, () => {
